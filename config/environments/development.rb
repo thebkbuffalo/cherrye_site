@@ -41,7 +41,4 @@ Rails.application.configure do
 
   Paperclip.options[:command_path] = "/usr/local/bin/convert"
 
-  config.action_dispatch.default_headers = {
-    'X-Frame-Options' => 'ALLOWALL'
-  }
 end
