@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  happening_now_title: MyString
+  happening_now_description: MyText
+  coming_up_title: MyString
+  coming_up_description: MyText
+  press: MyText
+
+two:
+  happening_now_title: MyString
+  happening_now_description: MyText
+  coming_up_title: MyString
+  coming_up_description: MyText
+  press: MyText

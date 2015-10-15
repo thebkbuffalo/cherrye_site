@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Playwrights</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Happening now title</th>
+      <th>Happening now description</th>
+      <th>Happening now still</th>
+      <th>Coming up title</th>
+      <th>Coming up description</th>
+      <th>Coming Up Still</th>
+      <th>Press</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @playwrights.each do |playwright| %>
+      <tr>
+        <td><%= playwright.happening_now_title %></td>
+        <td><%= playwright.happening_now_description %></td>
+        <td><%= image_tag playwright.happening_now_prod_still.url(:thumb) %></td>
+        <td><%= playwright.coming_up_title %></td>
+        <td><%= playwright.coming_up_description %></td>
+        <td><%= image_tag playwright.up_coming_prod_still.url(:thumb) %></td>
+        <td><%= playwright.press %></td>
+        <td><%= link_to 'Show', playwright %></td>
+        <td><%= link_to 'Edit', edit_playwright_path(playwright) %></td>
+        <td><%= link_to 'Destroy', playwright, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Playwright', new_playwright_path %>

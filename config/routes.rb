@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :playwrights, :path => "playwright"
   resources :performances
   resources :videos
   resources :images

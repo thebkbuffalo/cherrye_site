@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Happening now title:</strong>
+  <%= @playwright.happening_now_title %>
+</p>
+
+<p>
+  <strong>Happening now description:</strong>
+  <%= @playwright.happening_now_description %>
+</p>
+<p>
+  <%= image_tag @playwright.happening_now_prod_still.url(:medium) %>
+</p>
+<p>
+  <strong>Coming up title:</strong>
+  <%= @playwright.coming_up_title %>
+</p>
+
+<p>
+  <strong>Coming up description:</strong>
+  <%= @playwright.coming_up_description %>
+</p>
+<p>
+  <%= image_tag @playwright.up_coming_prod_still.url(:medium) %>
+</p>
+<p>
+  <strong>Press:</strong>
+  <%= @playwright.press %>
+</p>
+
+<%= link_to 'Edit', edit_playwright_path(@playwright) %> |
+<%= link_to 'Back', playwrights_path %>
