@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @performance.title %>
+</p>
+
+<p>
+  <strong>Caption:</strong>
+  <%= @performance.caption %>
+</p>
+
+<p>
+  <strong>Link to buy:</strong>
+  <%= @performance.link_to_buy %>
+</p>
+<p>
+  <strong>Production Still!</strong>
+  <%= image_tag @performance.perf_photo.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_performance_path(@performance) %> |
+<%= link_to 'Back', performances_path %>

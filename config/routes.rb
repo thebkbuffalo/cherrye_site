@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :performances
   resources :videos
   resources :images
   # You can have the root of your site routed with "root"
