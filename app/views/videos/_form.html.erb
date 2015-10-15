@@ -10,7 +10,9 @@
       </ul>
     </div>
   <% end %>
-
+  <%= f.text_area :title, placeholder: "Title!", rows: 3, cols: 40 %><br/>
+  <%= f.text_area :url, placeholder: "Embed Link!", rows: 3, cols: 50 %><br/>
+  <%= f.text_area :caption, placeholder: "Caption!", rows: 8, cols: 45 %><br/>
   <div class="actions">
     <%= f.submit %>
   </div>
