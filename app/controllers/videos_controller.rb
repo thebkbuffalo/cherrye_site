@@ -1,5 +1,6 @@
 class VideosController < ApplicationController
   before_action :set_video, only: [:show, :edit, :update, :destroy]
+  after_action :allow_iframe
 
   # GET /videos
   # GET /videos.json
@@ -62,6 +63,9 @@ class VideosController < ApplicationController
   end
 
   private
+    def allow_iframe
+      response.headers.delete("X-FRAME-OPTIONS")
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_video
       @video = Video.find(params[:id])
