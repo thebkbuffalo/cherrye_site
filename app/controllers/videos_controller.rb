@@ -1,6 +1,8 @@
 class VideosController < ApplicationController
+  after_action :allow_iframe, only: :embed
   before_action :set_video, only: [:show, :edit, :update, :destroy]
-  after_action :allow_iframe
+
+
 
   # GET /videos
   # GET /videos.json
@@ -64,7 +66,7 @@ class VideosController < ApplicationController
 
   private
     def allow_iframe
-      response.headers.delete("X-FRAME-OPTIONS")
+      response.headers['X-Frame-Options'] = "ALLOW FROM https://www.vimeo.com"
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_video
