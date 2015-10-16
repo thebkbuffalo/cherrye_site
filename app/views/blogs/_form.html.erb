@@ -11,9 +11,13 @@
     </div>
   <% end %>
   <div class="new_blog_form">
-    <%= f.text_area :title, placeholder: "Title!", rows: 5, cols: 35 %>
+    <div class="new_blog_title">
+      <%= f.text_area :title, placeholder: "Title!", rows: 5, cols: 35 %>
+    </div>
     <br/>
-    <%= f.text_area :content, placeholder: "Content!", rows: 10, cols: 50 %>
+    <div class="new_blog_content froala-view">
+      <%= f.text_area :content, id: "edit", placeholder: "Content!", rows: 10, cols: 50 %>
+    </div>
     <br/>
   </div>
   <div class="actions">
