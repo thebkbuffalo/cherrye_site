@@ -1,3 +1,5 @@
-$(function() {
-  $('#edit').editable({inlineMode: false})
+$(document).ready(function(){
+  $(function() {
+    $('#edit').froalaEditor()
+  });
 });
