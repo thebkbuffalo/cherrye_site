@@ -39,7 +39,7 @@ gem 'pry', '~> 0.10.2'
 gem 'pry-rails', '~> 0.3.4'
 
 # text formatting bar gem
-gem 'wysiwyg-rails', '~> 1.2.8'
+gem "wysiwyg-rails", "2.0.0.pre.rc.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
