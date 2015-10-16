@@ -38,6 +38,7 @@ gem 'paperclip', '~> 4.3.1'
 gem 'pry', '~> 0.10.2'
 gem 'pry-rails', '~> 0.3.4'
 
+
 # text editor gem
 gem "wysiwyg-rails", "2.0.0.pre.rc.3"
 

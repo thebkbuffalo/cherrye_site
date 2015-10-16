@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require froala_editor.min.js
 //= require jquery_ujs
 //= require froala_editor.min.js
 //= require turbolinks
