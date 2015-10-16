@@ -8,7 +8,7 @@ module VideosHelper
     # else contains vimeo run
     else url.include?("vimeo")
       vimeo_id = url.split('/').last
-      content_tag(:iframe, nil, src: "//www.vimeo.com/video/#{vimeo_id}")
+      content_tag(:iframe, nil, src: "https://player.vimeo.com/video/#{vimeo_id}")
     end
   end
 end
