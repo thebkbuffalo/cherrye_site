@@ -13,11 +13,18 @@ class VideosController < ApplicationController
   # GET /videos/1
   # GET /videos/1.json
   def show
+    if !current_user
+      redirect_to '/blog'
+    end
   end
 
   # GET /videos/new
   def new
-    @video = Video.new
+    if current_user
+      @video = Video.new
+    else
+      redirect_to '/blog'
+    end
   end
 
   # GET /videos/1/edit

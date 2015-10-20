@@ -10,11 +10,18 @@ class PerformancesController < ApplicationController
   # GET /performances/1
   # GET /performances/1.json
   def show
+    if !current_user
+      redirect_to '/blog'
+    end
   end
 
   # GET /performances/new
   def new
-    @performance = Performance.new
+    if current_user
+      @performance = Performance.new
+    else
+      redirect_to '/blog'
+    end
   end
 
   # GET /performances/1/edit

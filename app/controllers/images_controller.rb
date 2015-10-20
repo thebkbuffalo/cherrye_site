@@ -10,11 +10,18 @@ class ImagesController < ApplicationController
   # GET /images/1
   # GET /images/1.json
   def show
+    if !current_user
+      redirect_to '/blog'
+    end
   end
 
   # GET /images/new
   def new
-    @image = Image.new
+    if current_user
+      @image = Image.new
+    else
+      redirect_to '/blog'
+    end
   end
 
   # GET /images/1/edit

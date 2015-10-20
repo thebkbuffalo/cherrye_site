@@ -10,11 +10,18 @@ class PlaywrightsController < ApplicationController
   # GET /playwrights/1
   # GET /playwrights/1.json
   def show
+    if !current_user
+      redirect_to '/blog'
+    end
   end
 
   # GET /playwrights/new
   def new
-    @playwright = Playwright.new
+    if current_user
+      @playwright = Playwright.new
+    else
+      redirect_to '/blog'
+    end
   end
 
   # GET /playwrights/1/edit
