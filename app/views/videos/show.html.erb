@@ -1,4 +1,7 @@
 <p id="notice"><%= notice %></p>
+<%= simple_format(@video.title) %>
+<%= simple_format(@video.caption) %>
 <%= embed(@video.url) %>
 <%= link_to 'Edit', edit_video_path(@video) %> |
-<%= link_to 'Back', videos_path %>
+<%= link_to 'Back', videos_path %> |
+<%= link_to 'Destroy', @video, method: :delete, data: { confirm: 'Are you sure?' } %>

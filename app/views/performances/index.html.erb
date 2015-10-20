@@ -15,8 +15,8 @@
   <tbody>
     <% @performances.each do |performance| %>
       <tr>
-        <td><%= performance.title %></td>
-        <td><%= performance.caption %></td>
+        <td><%= simple_format(performance.title) %></td>
+        <td><%= simple_format(performance.caption) %></td>
         <td><%= performance.link_to_buy %></td>
         <td><%= image_tag performance.perf_photo.url(:thumb) %></td>
         <% if current_user %>

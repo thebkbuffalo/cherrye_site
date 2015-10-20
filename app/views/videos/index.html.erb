@@ -9,11 +9,10 @@
   </thead>
 
   <tbody>
-    <!-- <iframe width="560" height="300" src="https://www.youtube.com/embed/-omR1rXcPrE" frameborder="0" allowfullscreen></iframe> -->
     <% @videos.each do |video| %>
       <tr>
-        <td><h3><%= video.title %></h3></td>
-        <td><%= video.caption %></td>
+        <td><h3><%= simple_format(video.title) %></h3></td>
+        <td><%= simple_format(video.caption) %></td>
         <td><%= embed(video.url) %></td>
         <% if current_user %>
           <td><%= link_to 'Show', video %></td>

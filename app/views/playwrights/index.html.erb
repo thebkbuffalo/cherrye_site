@@ -19,13 +19,13 @@
   <tbody>
     <% @playwrights.each do |playwright| %>
       <tr>
-        <td><%= playwright.happening_now_title %></td>
-        <td><%= playwright.happening_now_description %></td>
+        <td><%= simple_format(playwright.happening_now_title) %></td>
+        <td><%= simple_format(playwright.happening_now_description) %></td>
         <td><%= image_tag playwright.happening_now_prod_still.url(:thumb) %></td>
-        <td><%= playwright.coming_up_title %></td>
-        <td><%= playwright.coming_up_description %></td>
+        <td><%= simple_format(playwright.coming_up_title) %></td>
+        <td><%= simple_format(playwright.coming_up_description) %></td>
         <td><%= image_tag playwright.up_coming_prod_still.url(:thumb) %></td>
-        <td><%= playwright.press %></td>
+        <td><%= simple_format(playwright.press) %></td>
         <% if current_user %>
           <td><%= link_to 'Show', playwright %></td>
           <td><%= link_to 'Edit', edit_playwright_path(playwright) %></td>
