@@ -1,5 +1,5 @@
 $(document).ready(function(){
   $(function() {
-    $('#edit').froalaEditor()
+    $('.edit').froalaEditor()
   });
 });

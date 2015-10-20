@@ -19,14 +19,14 @@
         <td><%= performance.caption %></td>
         <td><%= performance.link_to_buy %></td>
         <td><%= image_tag performance.perf_photo.url(:thumb) %></td>
-        <td><%= link_to 'Show', performance %></td>
-        <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
-        <td><%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user %>
+          <td><%= link_to 'Show', performance %></td>
+          <td><%= link_to 'Edit', edit_performance_path(performance) %></td>
+          <td><%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Performance', new_performance_path %>

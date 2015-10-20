@@ -26,14 +26,14 @@
         <td><%= playwright.coming_up_description %></td>
         <td><%= image_tag playwright.up_coming_prod_still.url(:thumb) %></td>
         <td><%= playwright.press %></td>
-        <td><%= link_to 'Show', playwright %></td>
-        <td><%= link_to 'Edit', edit_playwright_path(playwright) %></td>
-        <td><%= link_to 'Destroy', playwright, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user %>
+          <td><%= link_to 'Show', playwright %></td>
+          <td><%= link_to 'Edit', edit_playwright_path(playwright) %></td>
+          <td><%= link_to 'Destroy', playwright, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Playwright', new_playwright_path %>

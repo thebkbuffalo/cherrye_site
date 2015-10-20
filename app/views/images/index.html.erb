@@ -6,28 +6,10 @@
 <div class="images_index">
   <% @images.each do |image| %>
     <%= image_tag image.photo.url(:medium) %>
+    <% if current_user %>
+      <%= link_to 'Show', image %>
+      <%= link_to 'Edit', edit_image_path(image) %>
+      <%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
   <%end%>
 </div>
-
-<!-- <table class="images_table">
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @images.each do |image| %>
-      <tr>
-        <td><%= image_tag image.photo.url(:medium) %></td>
-        <!-- <td><%= link_to 'Show', image %></td>
-        <td><%= link_to 'Edit', edit_image_path(image) %></td>
-        <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
-      <!-- </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br> -->
-
-<!-- # <%= link_to 'New Image', new_image_path %> -->

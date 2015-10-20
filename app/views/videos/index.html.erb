@@ -15,14 +15,14 @@
         <td><h3><%= video.title %></h3></td>
         <td><%= video.caption %></td>
         <td><%= embed(video.url) %></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if current_user %>
+          <td><%= link_to 'Show', video %></td>
+          <td><%= link_to 'Edit', edit_video_path(video) %></td>
+          <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Video', new_video_path %>
