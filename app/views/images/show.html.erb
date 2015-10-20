@@ -3,6 +3,7 @@
 <%= image_tag @image.photo.url %>
 <%= image_tag @image.photo.url(:medium) %>
 <%= image_tag @image.photo.url(:thumb) %>
+<%= simple_format(@image.caption) %>
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Destroy', @image, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', images_path %>

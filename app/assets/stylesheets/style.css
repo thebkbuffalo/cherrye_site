@@ -5,3 +5,7 @@
 .new_blog_form {
   max-width: 70em;
 }
+
+.new_image_caption {
+  max-width: 60em;
+}

@@ -12,6 +12,11 @@
   <% end %>
   <div class="new_image_form">
     <%= f.file_field :photo %>
+    <br/>
+    <div class="new_image_caption">
+      <h3>Caption!</h3>
+      <%= f.text_area :caption, class: "edit" %>
+    </div>
   </div>
   <br/>
   <div class="actions">

@@ -6,6 +6,7 @@
 <div class="images_index">
   <% @images.each do |image| %>
     <%= image_tag image.photo.url(:medium) %>
+    <%= simple_format(image.caption) %>
     <% if current_user %>
       <%= link_to 'Show', image %>
       <%= link_to 'Edit', edit_image_path(image) %>
