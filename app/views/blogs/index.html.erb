@@ -12,8 +12,8 @@
   <tbody>
     <% @blogs.each do |blog| %>
       <tr>
-        <td><%= blog.title %></td><br>
-        <td><%= blog.content %></td>
+        <td><%= simple_format(blog.title) %></td><br>
+        <td><%= simple_format(blog.content) %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>

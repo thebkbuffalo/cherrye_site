@@ -1,7 +1,7 @@
 <h1>News and Updates!</h1>
 <% @blogs.each do |blog| %>
-  <%= blog.title %><br/>
-  <%= blog.content %>
+  <%= simple_format(blog.title) %><br/>
+  <%= simple_format(blog.content) %>
   <br/>
   <br/>
 <% end %>

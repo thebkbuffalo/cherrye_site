@@ -12,11 +12,13 @@
   <% end %>
   <div class="new_blog_form">
     <div class="new_blog_title">
-      <%= f.text_area :title, class: "edit", placeholder: "Title!", rows: 5, cols: 35 %>
+      <h3>Title!</h3>
+      <%= f.text_area :title, class: "edit" %>
     </div>
     <br/>
     <div class="new_blog_content">
-      <%= f.text_area :content, class: "edit", placeholder: "Content!", rows: 10, cols: 50 %>
+      <h3>Content!</h3>
+      <%= f.text_area :content, class: "edit" %>
     </div>
     <br/>
   </div>
