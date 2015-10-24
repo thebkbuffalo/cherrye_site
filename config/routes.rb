@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  resources :biographies
+  resources :biographies, :path => "bio"
   resources :playwrights, :path => "playwright"
   resources :performances
   resources :videos
