@@ -17,9 +17,9 @@ video#bgvid {
   -o-background-size: cover;
   -webkit-background-size: cover;
   width: 100%;
-  /*height: 100vh;*/
+  /*height: 100%;*/
   text-align: center;
   z-index: -100;
   position: fixed;
-  background: url("https://uproxx.files.wordpress.com/2015/09/rick-morty-plot-2.gif?w=650");
+  /*background: url("https://uproxx.files.wordpress.com/2015/09/rick-morty-plot-2.gif?w=650");*/
 }
