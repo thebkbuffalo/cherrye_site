@@ -21,5 +21,5 @@ video#bgvid {
   text-align: center;
   z-index: -100;
   position: fixed;
-  /*background: url(../pics/videofallback.jpg);*/
+  background: url("https://uproxx.files.wordpress.com/2015/09/rick-morty-plot-2.gif?w=650");
 }
