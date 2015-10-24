@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @biography.bio %>
+</p>
+
+<p>
+  <strong>Press:</strong>
+  <%= @biography.press %>
+</p>
+
+<%= link_to 'Edit', edit_biography_path(@biography) %> |
+<%= link_to 'Back', biographies_path %>
