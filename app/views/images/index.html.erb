@@ -1,16 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Images</h1>
-
-
-<div class="images_index">
-  <% @images.each do |image| %>
-    <%= image_tag image.photo.url(:medium) %>
-    <%= simple_format(image.caption) %>
+<h1 class="images_header">PICTURES AND SHIT</h1>
+<% @images.each do |image| %>
+  <div class="images_index">
+    <%= image_tag image.photo.url(:medium), class: "individual_image" %>
+    <%= simple_format(image.caption, class: "image_caption") %>
     <% if current_user %>
       <%= link_to 'Show', image %>
       <%= link_to 'Edit', edit_image_path(image) %>
       <%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
-  <%end%>
-</div>
+  </div>
+<%end%>

@@ -1,27 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Videos</h1>
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @videos.each do |video| %>
-      <tr>
-        <td><h3><%= simple_format(video.title) %></h3></td>
-        <td><%= simple_format(video.caption) %></td>
-        <td><%= embed(video.url) %></td>
-        <% if current_user %>
-          <td><%= link_to 'Show', video %></td>
-          <td><%= link_to 'Edit', edit_video_path(video) %></td>
-          <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
+<div class="videos_index">
+  <br>
+  <h1 class="media_video">Media/Videos</h1>
+  <br>
+  <% @videos.each do |video| %>
+    <%= simple_format(video.title, class: "video_title") %>
+    <%= embed(video.url) %>
+    <%= simple_format(video.caption, class: "video_caption") %>
+    <% if current_user %>
+      <%= link_to 'Show', video %>
+      <%= link_to 'Edit', edit_video_path(video) %>
+      <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
-  </tbody>
-</table>
-
-<br>
+    <br>
+  <% end %>
+</div>

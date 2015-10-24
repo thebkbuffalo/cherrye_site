@@ -1,0 +1,21 @@
+.images_header {
+  text-align: center;
+}
+
+.images_index {
+  display: inline-block;
+  /*border: solid black 1px;*/
+
+  margin: .5em;
+}
+
+.individual_image {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  padding: 1em;
+}
+
+.image_caption {
+  display: inline-block;
+}
