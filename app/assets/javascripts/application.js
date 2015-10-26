@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require froala_editor.min.js
 //= require jquery_ujs
+//= require froala_editor.min.js
 //= require froala_editor.min.js
 //= require plugins/align.min.js
 //= require plugins/char_counter.min.js
@@ -38,5 +38,5 @@
 //= require plugins/url.min.js
 //= require plugins/video.min.js
 
-
+//= require turbolinks
 //= require_tree .

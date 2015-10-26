@@ -3,7 +3,7 @@
 <head>
   <title>CherryeSite</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -23,7 +23,7 @@
   <% else %>
   <% end %>
   <% if current_user %>
-    Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>
+    <%= link_to "Logout", '/logout' %>
   <% end %>
 
   <div id="overlay-back"></div>

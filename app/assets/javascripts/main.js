@@ -7,15 +7,19 @@ $(document).ready(function(){
     window.location.assign('http://localhost:3000/blog');
   });
 
+  $('.fa-bars').on('click', function(){
+    console.log("clicked");
+    $('#overlay, #overlay-back').fadeIn(500);
+   });
 
-  if($('#overlay').css('display') == 'none'){
-    console.log('black background display is none');
-    $('.fa-bars').on('click', function(){
-      console.log("clicked");
-      $('#overlay, #overlay-back').fadeIn(500);
-    });
-  }else{
-    console.log('no black background');
-  }
+  // if($('#overlay').css('display') == 'none'){
+  //   console.log('black background display is none');
+  //   $('.fa-bars').on('click', function(){
+  //     console.log("clicked");
+  //     $('#overlay, #overlay-back').fadeIn(500);
+  //   });
+  // }else{
+  //   console.log('no black background');
+  // }
 
 });
