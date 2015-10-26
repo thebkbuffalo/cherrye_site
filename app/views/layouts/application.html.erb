@@ -7,15 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="nav_bar">
-    <ul class="nav_bar_inner">
-      <li class="menu_bar"><a href="/blog">BLOG</a></li>
-      <li class="menu_bar"><a href="/images">Pictures</a></li>
-      <li class="menu_bar"><a href="/videos">Video</a></li>
-      <li class="menu_bar"><a href="/performances">Performances</a></li>
-      <li class="menu_bar"><a href="/bio">BIO</a></li>
-    </ul>
-  </div>
+  <% if url.include?('blog') || url.include?('images') || url.include?('videos') || url.include?('performances') || url.include?('playwright') || url.include?('bio') %>
+    <div class="nav_bar">
+      <ul class="nav_bar_inner">
+        <li class="menu_bar"><a href="/blog">BLOG</a></li>
+        <li class="menu_bar"><a href="/images">Pictures</a></li>
+        <li class="menu_bar"><a href="/videos">Video</a></li>
+        <li class="menu_bar"><a href="/performances">Performances</a></li>
+        <li class="menu_bar"><a href="/bio">BIO</a></li>
+      </ul>
+    </div>
+  <% end %>
   <% if current_user %>
     Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>
   <% end %>
