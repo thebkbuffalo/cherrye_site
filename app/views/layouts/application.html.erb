@@ -3,7 +3,7 @@
 <head>
   <title>CherryeSite</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,16 +15,19 @@
         <li class="menu_bar"><a href="/videos">Video</a></li>
         <li class="menu_bar"><a href="/performances">Performances</a></li>
         <li class="menu_bar"><a href="/bio">BIO</a></li>
+        <i class="fa fa-bars fa-2x"></i>
       </ul>
     </div>
   <% elsif request.original_url.ends_with?('/playwright') %>
     <h1><a href="/blog">HOME</a></h1>
   <% else %>
-    
   <% end %>
   <% if current_user %>
     Signed in as <%= current_user.username %> | <%= link_to "Logout", '/logout' %>
   <% end %>
+
+  <div id="overlay-back"></div>
+  <div id="overlay"><a class='playwright_link' href="/playwright">PLAYWRIGHT</a></div>
 <%= yield %>
 
 </body>
