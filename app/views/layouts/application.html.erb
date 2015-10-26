@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if request.original_url.ends_with?('/blog') || request.original_url.ends_with?('/images') || request.original_url.ends_with?('/videos') || request.original_url.ends_with?('/performances') || request.original_url.ends_with?('/bio') %>
+  <% if !request.original_url.ends_with?('/playwright') %>
     <div class="nav_bar">
       <ul class="nav_bar_inner">
         <li class="menu_bar"><a href="/blog">BLOG</a></li>
@@ -15,13 +15,18 @@
         <li class="menu_bar"><a href="/videos">Video</a></li>
         <li class="menu_bar"><a href="/performances">Performances</a></li>
         <li class="menu_bar"><a href="/bio">BIO</a></li>
+        <% if current_user %>
+          <li class="menu_bar"><a href="/playwright">Playwright</a></li>
+        <% end %>
         <i class="fa fa-bars fa-2x"></i>
+        <!-- <i id="overlay" class="fa fa-times fa-5x"></i> -->
       </ul>
     </div>
   <% elsif request.original_url.ends_with?('/playwright') %>
     <h1><a href="/blog">HOME</a></h1>
   <% else %>
   <% end %>
+
   <% if current_user %>
     <%= link_to "Logout", '/logout' %>
   <% end %>

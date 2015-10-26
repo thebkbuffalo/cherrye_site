@@ -11,6 +11,11 @@
   float: right;
 }
 
+.fa-times {
+  float: right;
+  color: white;
+}
+
 .fa-bars:hover {
   cursor: pointer;
 }
