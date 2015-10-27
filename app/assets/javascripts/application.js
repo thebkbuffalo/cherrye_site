@@ -39,5 +39,8 @@
 //= require plugins/url.min.js
 //= require plugins/video.min.js
 
+//= require lightbox
+
+
 //= require turbolinks
 //= require_tree .
