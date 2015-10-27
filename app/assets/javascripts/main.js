@@ -14,8 +14,9 @@ $(document).ready(function(){
     $('#overlay, #overlay-back, .playwright_link').fadeIn(500);
   });
 
-  $('#overlay').on('click', function(){
+  $('#overlay, #overlay-back').on('click', function(){
     $('#overlay, #overlay-back, .playwright_link').fadeOut(500);
   });
+
 
 });
