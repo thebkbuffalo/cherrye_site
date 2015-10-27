@@ -14,6 +14,17 @@
   height: 150px;
   width: 150px;
   padding: 1em;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.individual_image:hover {
+  background-color: white;
+  background: white;
+}
+
+a.image_link:hover {
+  border: white;
 }
 
 .image_caption {

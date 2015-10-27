@@ -3,7 +3,7 @@
 <h1 class="images_header">PICTURES AND SHIT</h1>
 <% @images.each do |image| %>
   <div class="images_index">
-    <a href="<%= image.photo.url %>" data-lightbox="bender" %>"><img class="individual_image" src="<%= image.photo.url(:medium) %>"></a>
+    <a class="image_link" href="<%= image.photo.url %>" data-lightbox="#"><img class="individual_image" src="<%= image.photo.url(:medium) %>"></a>
 
     <% if current_user %>
       <%= link_to 'Show', image %>
