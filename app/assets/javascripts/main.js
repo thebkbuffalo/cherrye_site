@@ -11,11 +11,11 @@ $(document).ready(function(){
 
 
   $('.fa-bars').on('click', function(){
-    $('#overlay, #overlay-back').fadeIn(500);
+    $('#overlay, #overlay-back, .playwright_link').fadeIn(500);
   });
 
   $('#overlay').on('click', function(){
-    $('#overlay, #overlay-back').fadeOut(500);
+    $('#overlay, #overlay-back, .playwright_link').fadeOut(500);
   });
 
 });
