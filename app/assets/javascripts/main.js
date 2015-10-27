@@ -18,10 +18,4 @@ $(document).ready(function(){
     $('#overlay, #overlay-back, .playwright_link').fadeOut(500);
   });
 
-  $('.individual_image').on('click', function(){
-    console.log($(this));
-    $('#overlay, #overlay-back').fadeIn(350);
-    
-  });
-
 });
