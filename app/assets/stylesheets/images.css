@@ -21,10 +21,12 @@
 .individual_image:hover {
   background-color: white;
   background: white;
+
 }
 
 a.image_link:hover {
-  border: white;
+  background: white;
+  background-color: white;
 }
 
 .image_caption {
