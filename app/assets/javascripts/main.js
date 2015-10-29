@@ -18,4 +18,10 @@ $(document).ready(function(){
     $('#overlay, #overlay-back, .playwright_link').fadeOut(500);
   });
 
+  var urlPath = window.location.pathname;
+  if(urlPath === '/'){
+    console.log(urlPath);
+    $('.nav_bar').hide();
+  }
+
 });

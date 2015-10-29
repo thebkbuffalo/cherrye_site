@@ -7,9 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- <h1><%= request.original_fullpath %></h1> -->
   <!-- <h1><%= current_page?('/') %></h1> -->
-  <% if !request.original_url.ends_with?('/playwright') || !current_page?('/') %>
+  <% if !request.original_url.ends_with?('/playwright') %>
     <div class="nav_bar">
       <ul class="nav_bar_inner">
         <li class="cherrye_home"><a href="/blog">CHERRYE DAVIS</a></li>
@@ -26,7 +25,7 @@
     </div>
   <% elsif request.original_url.ends_with?('/playwright') %>
     <h1><a href="/blog">HOME</a></h1>
-  <% elsif current_page?('/') == true %>
+  <% else request.original_url.ends_with?('/') %>
     <p>your mom</p>
   <% end %>
 
