@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<h4><%= @blog.title %></h4>
-<p><%= @blog.content %></p>
+<h4><%= simple_format(@blog.title) %></h4>
+<p><%= simple_format(@blog.content) %></p>
 <%= link_to 'Edit', edit_blog_path(@blog) %> |
 <%= link_to 'Back', blogs_path %>

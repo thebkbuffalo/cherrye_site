@@ -1,5 +1,8 @@
 .images_header {
   text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 2em 0;
 }
 
 .images_index {

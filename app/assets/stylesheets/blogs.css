@@ -1,3 +1,24 @@
 .main_blog_box {
-  text-align: center;
+  margin-top: 1.73em;
+  text-align: center!important;
+}
+
+.main_blog_box hr {
+  margin: 0 5em;
+}
+
+.blog_header {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.blog_title {
+}
+
+.blog_content {
+  margin: 0 15em;
+}
+
+.new_blog_title {
+  margin-bottom: 7em;
 }

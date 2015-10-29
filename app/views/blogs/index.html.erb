@@ -1,11 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <div class="main_blog_box">
-  <h1>News And Shit!</h1>
+  <h1 class="blog_header">News And Shit!</h1>
+  <br>
+  <hr>
   <br>
   <% @blogs.each do |blog| %>
-    <%= simple_format(blog.title) %><br>
-    <%= simple_format(blog.content) %>
+    <div class="blog_title">
+      <h1><%= simple_format(blog.title) %></h1><br>
+    </div>
+    <div class="blog_content">
+      <p><%= simple_format(blog.content) %></p>
+    </div>
     <% if current_user %>
       <%= link_to 'Show', blog %><
       <%= link_to 'Edit', edit_blog_path(blog) %><

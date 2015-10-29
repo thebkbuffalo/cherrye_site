@@ -19,7 +19,7 @@ $(document).ready(function(){
   if(urlPath === '/'){
     console.log(urlPath);
     $('.nav_bar').hide();
-    $('.nav_bar').delay(5000).show(500);
+    $('.nav_bar').delay(8000).show(500);
   }
 
 });

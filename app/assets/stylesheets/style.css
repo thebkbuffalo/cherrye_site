@@ -1,6 +1,11 @@
+/*nav bar style*/
+.nav_bar {
+  height: 5em;
+  background: #353940;
+}
 .nav_bar_inner {
   text-align: center;
-  margin: 1em;
+  padding: 1.80em .5em 1em .5em;
 }
 
 .menu_bar {
@@ -13,17 +18,21 @@
 
 .fa-bars {
   float: right;
-}
-
-.fa-times {
-  float: right;
-  color: white;
+  color: #F0F0EF;
 }
 
 .fa-bars:hover {
   cursor: pointer;
 }
 
+.nav_bar_inner a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 1.37em;
+  color: #F0F0EF;
+}
+
+/*portal to different sections*/
 #overlay-back {
   position: absolute;
   top: 0;
@@ -57,11 +66,12 @@ a.playwright_link {
   top: 10em!important;
 }
 
-
+/*text-editor box*/
 .fr-box {
   max-width: 70em;
 }
 
+/*background video*/
 video#bgvid {
   background-attachment: scroll, scroll, scroll;
   background-size: cover;
