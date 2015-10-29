@@ -7,9 +7,6 @@ $(document).ready(function(){
     window.location.assign('http://localhost:3000/blog');
   });
 
-
-
-
   $('.fa-bars').on('click', function(){
     $('#overlay, #overlay-back, .playwright_link').fadeIn(500);
   });

@@ -1,0 +1,18 @@
+.media_video {
+  font-size: 4em;
+  margin: 1em;
+}
+
+.videos_index {
+  text-align: center;
+}
+
+.individual_video {
+  width: 600;
+  height: 300;
+}
+
+.video_title {
+  font-size: 2em;
+  margin-bottom: .3em;
+}

@@ -58,17 +58,8 @@ a.playwright_link {
 }
 
 
-
-.pictures_section {
-  color: red;
-}
-
-.new_blog_form {
+.fr-box {
   max-width: 70em;
-}
-
-.new_image_caption {
-  max-width: 60em;
 }
 
 video#bgvid {
@@ -83,28 +74,4 @@ video#bgvid {
   z-index: -100;
   position: fixed;
   /*background: url("https://uproxx.files.wordpress.com/2015/09/rick-morty-plot-2.gif?w=650");*/
-}
-
-.main_blog_box {
-  text-align: center;
-}
-
-
-.media_video {
-  font-size: 4em;
-  margin: 1em;
-}
-
-.videos_index {
-  text-align: center;
-}
-
-.individual_video {
-  width: 600;
-  height: 300;
-}
-
-.video_title {
-  font-size: 2em;
-  margin-bottom: .3em;
 }
