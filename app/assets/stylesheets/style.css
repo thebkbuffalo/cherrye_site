@@ -7,6 +7,10 @@
   display: inline-block;
 }
 
+.cherrye_home {
+  float: left;
+}
+
 .fa-bars {
   float: right;
 }
