@@ -1,20 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<h1>PERFORMANCES BITCHES!!!</h1>
+<h1 class="performance_header">PERFORMANCES BITCHES!!!</h1>
 <br>
 <% @performances.each do |performance| %>
-  <%= simple_format(performance.title) %>
-  <%= simple_format(performance.caption) %>
-  <%= performance.link_to_buy %><br>
-  <% if performance.perf_photo.url %>
-    <%= image_tag performance.perf_photo.url(:thumb), class: "performance_photo" %>
-  <%end%>
-  <% if current_user %>
-    <%= link_to 'Show', performance %>
-    <%= link_to 'Edit', edit_performance_path(performance) %>
-    <%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
-  <br><br><br>
+  <div class="all_performances">
+    <div class="performances_inner">
+      <%= simple_format(performance.title) %>
+      <%= simple_format(performance.caption) %>
+      <%= performance.link_to_buy %><br>
+      <% if performance.perf_photo.url %>
+        <%= image_tag performance.perf_photo.url(:thumb), class: "performance_photo" %>
+      <%end%>
+      <% if current_user %>
+        <%= link_to 'Show', performance %>
+        <%= link_to 'Edit', edit_performance_path(performance) %>
+        <%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+    </div>
+  </div>
 <% end %>
 
 
