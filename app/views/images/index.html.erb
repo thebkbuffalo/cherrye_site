@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1 class="images_header">PICTURES AND SHIT</h1>
+<hr>
 <% @images.each do |image| %>
   <div class="images_index">
     <a class="image_link" href="<%= image.photo.url %>" data-lightbox="#"><img class="individual_image" src="<%= image.photo.url(:medium) %>"></a>

@@ -3,6 +3,7 @@
 <div class="videos_index">
   <br>
   <h1 class="media_video">Media/Videos</h1>
+  <hr>
   <br>
   <% @videos.each do |video| %>
     <%= simple_format(video.title, class: "video_title") %>
