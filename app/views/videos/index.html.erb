@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<% if current_user %>
+  <%= link_to 'NEW VIDEO', new_video_path %>
+<% end %>
 <div class="videos_index">
   <br>
   <h1 class="media_video">Media/Videos</h1>

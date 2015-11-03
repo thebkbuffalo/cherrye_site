@@ -2,6 +2,9 @@
 
 <h1>BIO SON! READ IT!</h1>
 <% @biographies.each do |biography| %>
+  <% if current_user %>
+   <%= link_to 'EDIT BIO', edit_biography_path(biography) %>
+  <% end %>
   <%= simple_format(biography.bio) %><br>
   <h1>PRESS BITCH!</h1>
   <%= simple_format(biography.press) %>

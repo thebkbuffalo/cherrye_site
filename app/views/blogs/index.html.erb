@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if current_user %>
+  <%= link_to 'NEW BLOG', new_blog_path %>
+<% end %>
+
 <div class="main_blog_box">
   <h1 class="blog_header">News And Shit!</h1>
   <br>

@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
-
+<% if current_user %>
+  <%= link_to 'NEW PERFORMANCE', new_performance_path %>
+<% end %>
 <h1 class="performance_header">PERFORMANCES BITCHES!!!</h1>
 <br>
 <% @performances.each do |performance| %>

@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<% if current_user %>
+  <%= link_to 'NEW ENTRY', new_playwright_path %>
+<% end %>
+
 <h1>Listing Playwrights</h1>
 
 <table>
