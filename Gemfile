@@ -35,10 +35,10 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 
 #paperclip for uploading files
-gem 'paperclip', '~> 4.3.1'
+gem 'paperclip'
 
 # AMAZON WEB SERVICE GEM
-# gem 'aws-sdk', '~> 2.1', '>= 2.1.35'
+gem 'aws-sdk'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
