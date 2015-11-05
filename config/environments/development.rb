@@ -36,11 +36,20 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  
+
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-  Paperclip.options[:command_path] = "/usr/local/bin/convert"
+  # Paperclip.options[:command_path] = "/usr/local/bin/convert"
+
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => 'cherryesite',
+      :access_key_id => 'AKIAIC4CAHXWTVYQX4RQ',
+      :secret_access_key => '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'
+    }
+  }
 
 end

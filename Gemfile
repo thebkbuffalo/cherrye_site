@@ -38,7 +38,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'paperclip'
 
 # AMAZON WEB SERVICE GEM
-gem 'aws-sdk'
+gem 'aws-sdk-v1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
