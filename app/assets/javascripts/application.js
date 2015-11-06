@@ -13,9 +13,7 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require wysihtml
-//= require wysihtml-toolbar
-//= require parser-rules
+
 
 //= require lightbox
 
