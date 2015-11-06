@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-  // var editor = new wysihtml5.Editor('edit', {
-  //   toolbar: 'toolbar',
-  //   parserRules:  wysihtml5ParserRules
-  // });
 
   $('#bgvid').on('ended', function(){
     window.location.assign('http://localhost:3000/blog');
