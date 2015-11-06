@@ -1,6 +1,8 @@
 $(document).ready(function(){
-  $(function() {
-    $('.edit').froalaEditor();
+
+  var editor = new wysihtml5.Editor('edit', {
+    toolbar: 'toolbar',
+    parserRules:  wysihtml5ParserRules
   });
 
   $('#bgvid').on('ended', function(){
