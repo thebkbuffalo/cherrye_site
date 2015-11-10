@@ -49,7 +49,8 @@ gem 'pry-rails', '~> 0.3.4'
 # gem for lightbox
 gem 'lightbox2-rails', '~> 2.7', '>= 2.7.1'
 
-
+# font awesome
+gem 'font-awesome-rails', '~> 4.4'
 
 
 group :development, :test do
