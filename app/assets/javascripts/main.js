@@ -1,5 +1,7 @@
 $(document).ready(function(){
-
+  $('.ckeditor').ckeditor({
+  
+  });
 
   $('#bgvid').on('ended', function(){
     window.location.assign('http://localhost:3000/blog');

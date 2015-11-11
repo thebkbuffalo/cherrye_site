@@ -16,7 +16,7 @@
 
 
 //= require lightbox
-
+//= require ckeditor-jquery
 
 //= require turbolinks
 //= require_tree .

@@ -1,0 +1,9 @@
+width: 1000
+height: 200
+
+toolbar:
+  - styleselect | bold italic | undo redo
+  - image | link
+plugins:
+  - image
+  - link
