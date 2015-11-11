@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.ckeditor').ckeditor({
-  
+    
   });
 
   $('#bgvid').on('ended', function(){
