@@ -11,33 +11,44 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <h2><%= f.label :happening_now_title %></h2><br>
-    <%= f.text_area :happening_now_title, class: "ckeditor" %>
+  <div class="new_performances_header">
+    <h1 class="happening_now_menu new_performance_happening">New Happening Now Playwright</h1>
+    <h1 class="happening_later_menu new_performance_happening">New Happening Later Playright</h1>
   </div>
-  <div class="field">
-    <h2><%= f.label :happening_now_description %></h2><br>
-    <%= f.text_area :happening_now_description, class: "ckeditor" %>
+  <hr>
+  <div id="pw_now">
+    <h1>HAPPENING NOW NEW PERFORMANCE</h1>
+    <div class="field">
+      <h2><%= f.label :happening_now_title %></h2><br>
+      <%= f.text_area :happening_now_title, class: "ckeditor" %>
+    </div>
+    <div class="field">
+      <h2><%= f.label :happening_now_description %></h2><br>
+      <%= f.text_area :happening_now_description, class: "ckeditor" %>
+    </div>
+    <div class="field">
+      <h2>Attach Image For Whats Happening Now</h2>
+      <%= f.file_field :happening_now_prod_still %>
+    </div>
+    <div class="field">
+      <h2><%= f.label :press %></h2><br>
+      <%= f.text_area :press, class: "ckeditor" %>
+    </div>
   </div>
-  <div class="field">
-    <h2>Attach Image For Whats Happening Now</h2>
-    <%= f.file_field :happening_now_prod_still %>
-  </div>
-  <div class="field">
-    <h2><%= f.label :coming_up_title %></h2><br>
-    <%= f.text_area :coming_up_title, class: "ckeditor" %>
-  </div>
-  <div class="field">
-    <h2><%= f.label :coming_up_description %></h2><br>
-    <%= f.text_area :coming_up_description, class: "ckeditor" %>
-  </div>
-  <div class="field">
-    <h2>Attach An Image For Whats Coming Up</h2>
-    <%= f.file_field :up_coming_prod_still %>
-  </div>
-  <div class="field">
-    <h2><%= f.label :press %></h2><br>
-    <%= f.text_area :press, class: "ckeditor" %>
+  <div id="pw_later" class="pw_inactive">
+    <h1>HAPPENING LATER NEW PERFORMANCE</h1>
+    <div class="field">
+      <h2><%= f.label :coming_up_title %></h2><br>
+      <%= f.text_area :coming_up_title, class: "ckeditor" %>
+    </div>
+    <div class="field">
+      <h2><%= f.label :coming_up_description %></h2><br>
+      <%= f.text_area :coming_up_description, class: "ckeditor" %>
+    </div>
+    <div class="field">
+      <h2>Attach An Image For Whats Coming Up</h2>
+      <%= f.file_field :up_coming_prod_still %>
+    </div>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -2,7 +2,6 @@
   text-align: center;
   margin-top: 3.5em;
   font-size: 2em;
-
 }
 
 .all_performances {
@@ -30,4 +29,17 @@
 
 .performance_link {
   /*padding-left: 3em;*/
+}
+
+.new_performance_header {
+  text-align: center;
+}
+
+.new_performances_header:hover {
+  cursor: pointer;
+}
+
+.new_performance_happening {
+  display: inline-block;
+  padding: 0 3em;
 }
