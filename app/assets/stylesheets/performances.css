@@ -6,15 +6,28 @@
 }
 
 .all_performances {
-  display: inline-block;
   padding: 1.5em;
 }
 
 .performances_inner {
+  text-align: center;
+}
+
+.indie_performance {
   display: inline-block;
+  list-style-type: none;
+  padding: 0 2em;
+}
+
+.performance_title {
+  margin-bottom: .5em;
 }
 
 .performance_photo {
   height: 150px;
   width: 150px;
+}
+
+.performance_link {
+  /*padding-left: 3em;*/
 }

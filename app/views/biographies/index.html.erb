@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>BIO SON! READ IT!</h1>
+<div class="bio_header">
+  <h1>BIO SON! READ IT!</h1>
+</div>
 <% @biographies.each do |biography| %>
   <% if current_user %>
    <%= link_to 'EDIT BIO', edit_biography_path(biography) %>

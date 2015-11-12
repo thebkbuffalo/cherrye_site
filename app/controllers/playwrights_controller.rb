@@ -4,7 +4,7 @@ class PlaywrightsController < ApplicationController
   # GET /playwrights
   # GET /playwrights.json
   def index
-    @playwrights = Playwright.all
+    @playwrights = Playwright.all.order(created_at: :desc)
   end
 
   # GET /playwrights/1

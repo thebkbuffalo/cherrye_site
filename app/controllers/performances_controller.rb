@@ -4,7 +4,7 @@ class PerformancesController < ApplicationController
   # GET /performances
   # GET /performances.json
   def index
-    @performances = Performance.all
+    @performances = Performance.all.order(created_at: :desc)
   end
 
   # GET /performances/1

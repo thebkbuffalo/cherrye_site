@@ -5,14 +5,13 @@
 <h1 class="performance_header">PERFORMANCES BITCHES!!!</h1>
 <br>
 <% @performances.each do |performance| %>
+  <hr>
   <div class="all_performances">
     <div class="performances_inner">
-      <%= simple_format(performance.title) %>
-      <%= simple_format(performance.caption) %>
-      <%= performance.link_to_buy %><br>
-      <% if performance.perf_photo.url %>
-        <%= image_tag performance.perf_photo.url(:thumb), class: "performance_photo" %>
-      <%end%>
+      <span class="indie_performance"><%= simple_format(performance.title) %></span>
+      <span class="indie_performance"><%= simple_format(performance.caption) %></span>
+      <span class="indie_performance"><%= image_tag performance.perf_photo.url(:thumb), class: "performance_photo" %></span>
+      <button><span class="indie_performance performance_link"><a href="<%= performance.link_to_buy %>" target="_blank">Click Here To Buy</a></span></button>
       <% if current_user %>
         <%= link_to 'Show', performance %>
         <%= link_to 'Edit', edit_performance_path(performance) %>
@@ -20,6 +19,8 @@
       <% end %>
     </div>
   </div>
+  <hr>
+  <br>
 <% end %>
 
 

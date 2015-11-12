@@ -2,12 +2,20 @@ em {
   font-style: italic;
 }
 
+hr {
+  border-top: 1px solid black!important;
+}
+
 .form_header {
   margin-top: 2em;
 }
 
 .login_fool {
   margin-top: 2em;
+}
+
+.logout_link {
+  margin-top: 3.3em;
 }
 /*nav bar style*/
 .nav_bar {
