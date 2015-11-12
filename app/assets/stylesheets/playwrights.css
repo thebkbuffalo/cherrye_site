@@ -1,0 +1,42 @@
+#playwright_header {
+  text-align: center;
+  margin-top: 7em;
+}
+
+.pw_nav_bar {
+  background: #353940;
+}
+
+.pw_nav_bar_inner {
+  text-align: center;
+  color: #F0F0EF;
+}
+
+.pw_nav_bar_inner li {
+  list-style-type: none!important;
+  display: inline-block;
+  padding: 0 17px 0 17px;;
+  cursor: pointer;
+}
+
+.pw_nav_bar_inner a {
+  color: #F0F0EF;
+}
+
+.pw_cherrye_home {
+  float: left;
+  padding-left: 15px;
+}
+
+.pw_back_home {
+  float: right;
+  padding-right: 15px;
+}
+
+#pw_content {
+  text-align: center;
+}
+
+.pw_inactive {
+  display: none;
+}

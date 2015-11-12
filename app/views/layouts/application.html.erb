@@ -11,22 +11,24 @@
 <body>
   <!-- <h1><%= current_page?('/') %></h1> -->
   <% if !request.original_url.ends_with?('/playwright') %>
-    <div class="nav_bar">
-      <ul class="nav_bar_inner">
-        <li class="cherrye_home"><a href="/blog">CHERRYE DAVIS</a></li>
-        <li class="menu_bar"><a href="/blog">BLOG</a></li>
-        <li class="menu_bar"><a href="/images">Pictures</a></li>
-        <li class="menu_bar"><a href="/videos">Video</a></li>
-        <li class="menu_bar"><a href="/performances">Performances</a></li>
-        <li class="menu_bar"><a href="/bio">BIO</a></li>
-        <% if current_user %>
-          <li class="menu_bar"><a href="/playwright">Playwright</a></li>
-        <% end %>
-        <i class="fa fa-bars fa-2x"></i>
-      </ul>
-    </div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="nav_bar">
+        <ul class="nav_bar_inner">
+          <li class="cherrye_home"><a href="/blog">CHERRYE DAVIS</a></li>
+          <li class="menu_bar"><a href="/blog">BLOG</a></li>
+          <li class="menu_bar"><a href="/images">Pictures</a></li>
+          <li class="menu_bar"><a href="/videos">Video</a></li>
+          <li class="menu_bar"><a href="/performances">Performances</a></li>
+          <li class="menu_bar"><a href="/bio">BIO</a></li>
+          <% if current_user %>
+            <li class="menu_bar"><a href="/playwright">Playwright</a></li>
+          <% end %>
+          <i class="fa fa-bars fa-2x"></i>
+        </ul>
+      </div>
+    </nav>
   <% elsif request.original_url.ends_with?('/playwright') %>
-    <h1><a href="/blog">HOME</a></h1>
+    <!-- <h1><a href="/blog">HOME</a></h1> -->
   <% else request.original_url.ends_with?('/') %>
     <p>your mom</p>
   <% end %>

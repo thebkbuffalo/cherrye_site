@@ -1,6 +1,14 @@
 em {
   font-style: italic;
 }
+
+.form_header {
+  margin-top: 2em;
+}
+
+.login_fool {
+  margin-top: 2em;
+}
 /*nav bar style*/
 .nav_bar {
   height: 5em;
